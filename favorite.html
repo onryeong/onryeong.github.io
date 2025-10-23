@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>favorite</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #000000; 
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 600px; 
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .top-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 130px;
+        }
+        
+        .top-box {
+            height: 16px;
+            background-color: #333333; 
+            border-radius: 3px;
+        }
+        .logo { width: 80px; }
+        .menu { width: 120px; display: flex; justify-content: flex-end; }
+        .menu-item { width: 40px; margin-left: 10px; }
+
+        .title-area {
+            text-align: center;
+            margin-bottom: 80px;
+        }
+        .main-title-box {
+            height: 25px;
+            width: 60%;
+            margin: 0 auto;
+            border-radius: 4px;
+        }
+        
+        .section-container {
+            margin-bottom: 50px; 
+        }
+        
+        .image-placeholder {
+            position: relative;
+            background-color: #000000; 
+            height: 300px; 
+            margin-bottom: 20px;
+            border-radius: 8px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .subtitle-line {
+            background-color: #333333; 
+            height: 10px;
+            width: 100%;
+            margin-bottom: 20px;
+            border-radius: 2px;
+        }
+        
+        .text-block {
+            background-color: #000000; 
+            color: white;
+            padding: 25px;
+            border-radius: 8px;
+            min-height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .text-block p {
+            font-size: 1em;
+            color: #ccc; 
+        }
+        .full-screen-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+            color: white;
+            text-align: center;
+            padding-left: 0px;
+        }
+        .navbar {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            z-index: 10;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 1.2em;
+        }
+
+        .main-title-section {
+            text-align: center;
+            margin-bottom: 130px;
+        }
+
+        .main-content .dot-separator {
+    color: transparent; 
+}
+.footer {
+    background-color: #000000; /* 배경은 그대로 검정색 */
+    color: #666666; /* 텍스트는 부드러운 회색 */
+    padding: 40px 20px;
+    text-align: center;
+    border-top: 1px solid #1a1a1a; /* 상단에 아주 얇은 구분선 추가 */
+    font-size: 0.85em;
+}
+
+.footer p {
+    margin-bottom: 5px;
+}
+
+.footer a {
+    color: #999999;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer a:hover {
+    color: #ffffff;
+}
+
+.footer-links {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+    </style>
+</head>
+<body>
+    <div class="full-screen-container">
+        <div class="navbar">
+            <a href="index.html">MAIN</a>
+            <a href="history.html">HISTORY</a>
+            <a href="poster.html">POSTER</a>
+            <a href="favorite.html">MY FAVORITE</a>
+            <a href="sound.html">SOUND&SCENE</a>
+            <a href="evaluation.html">EVALUATION</a>
+        </div>
+
+        <div class="main-title-section">
+        <h1></h1> 
+        </div>
+
+    <div class="container">
+        <div class="title-area">
+            <div class="main-title-box"><h1>MY FAVORITE</h1></div>
+        </div>
+
+        <center>
+            <h2>리틀 포레스트</h2>
+        </center>
+
+        <div class="section-container">
+            <img src="poster4.jpg" alt="리틀 포레스트 포스터" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+            <div class="text-block">
+                <p>리틀 포레스트는 제가 가장 좋아하는 영화중 하나이자 추천드리고 싶은 영화중 하나입니다.
+                   4계절을 다 볼 수 있는 씬들과 주인공이 계절마다 어울리는 음식을 만들고 친구들과 함께 이야기를
+                   해나가는 것이 몽글몽글한 기분을 들게 하는 영화 입니다.
+                </p>
+            </div>
+        </div>
+        
+            <center>
+            <h2>늑대아이</h2>
+        </center>
+
+        <div class="section-container">
+            <img src="poster5.jpg" alt="리틀 포레스트 포스터" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+            <div class="text-block">
+                <p>
+                    늑대아이는 제가 제일 처음 좋아했던 만화영화이자 큰 감동을 주었던 영화 입니다.
+                    주인공이 아이들을 키우면서 겪는 어려움과 계절이 지남에 따라 아이들이 외적으로, 내적으로 성장하는
+                    모습을 보며 주인공에 감정에 이입했던 영화 입니다.
+                </p>
+            </div>
+        </div>
+<footer class="footer">
+            <p>&copy; 2024 Project INDEX. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a> | 
+                <a href="#">Terms of Service</a> | 
+                <a href="#">Contact</a>
+            </div>
+            <p>Designed for me</p>
+        </footer>
+
+    </div>
+</body>
+</html>
