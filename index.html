@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        
+        .full-screen-container {
+            width: 100vw; 
+            height: 100vh; 
+            
+            background-image: url('movie.jpg');
+            
+            background-size: cover; 
+            
+            background-position: center; 
+            
+            background-repeat: no-repeat;
+            
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+            color: white; 
+            text-align: center;
+            padding-left: 0px;
+        }
+
+        h1 {
+            font-size: 10em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+        }
+
+        p {
+            font-size: 1.5em;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+        }
+        
+        .navbar {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            z-index: 10;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 1.2em;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+        }
+        /* ------------------------------------- */
+/* 4. 풋터 스타일 */
+/* ------------------------------------- */
+.footer {
+    background-color: #000000; /* 배경은 그대로 검정색 */
+    color: #666666; /* 텍스트는 부드러운 회색 */
+    padding: 40px 20px;
+    text-align: center;
+    border-top: 1px solid #1a1a1a; /* 상단에 아주 얇은 구분선 추가 */
+    font-size: 0.85em;
+}
+
+.footer p {
+    margin-bottom: 5px;
+}
+
+.footer a {
+    color: #999999;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer a:hover {
+    color: #ffffff;
+}
+
+.footer-links {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+    </style>
+</head>
+<body>
+
+    <div class="full-screen-container">
+        <div class="navbar">
+            <a href="index.html">MOVIE</a>
+            <a href="history.html">HISTORY</a>
+            <a href="poster.html">POSTER</a>
+            <a href="favorite.html">MY FAVORITE</a>
+            <a href="sound.html">SOUND&SCENE</a>
+            <a href="evaluation.html">EVALUATION</a>
+        </div>
+        
+        <h1>MOVIE</h1>
+        <p>The world's attention, now it's time for you to check</p>
+    </div>
+        <footer class="footer">
+            <p>&copy; 2024 Project INDEX. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a> | 
+                <a href="#">Terms of Service</a> | 
+                <a href="#">Contact</a>
+            </div>
+            <p>Designed for me</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>

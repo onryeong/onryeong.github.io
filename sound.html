@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sound</title>
+    <style>
+          *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #000000; 
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 600px; 
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .top-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 130px;
+        }
+        
+        .top-box {
+            height: 16px;
+            background-color: #333333; 
+            border-radius: 3px;
+        }
+        .logo { width: 80px; }
+        .menu { width: 120px; display: flex; justify-content: flex-end; }
+        .menu-item { width: 40px; margin-left: 10px; }
+
+        .title-area {
+            text-align: center;
+            margin-bottom: 80px;
+        }
+        .main-title-box {
+            height: 25px;
+            width: 60%;
+            margin: 0 auto;
+            border-radius: 4px;
+        }
+        
+        .section-container {
+            margin-bottom: 50px; 
+        }
+        
+        .image-placeholder {
+            position: relative;
+            background-color: #000000; 
+            height: 300px; 
+            margin-bottom: 20px;
+            border-radius: 8px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .subtitle-line {
+            background-color: #333333; 
+            height: 10px;
+            width: 100%;
+            margin-bottom: 20px;
+            border-radius: 2px;
+        }
+        
+        .text-block {
+            background-color: #000000; 
+            color: white;
+            padding: 25px;
+            border-radius: 8px;
+            min-height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .text-block p {
+            font-size: 1em;
+            color: #ccc; 
+        }
+        .full-screen-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+            color: white;
+            text-align: center;
+            padding-left: 0px;
+        }
+        .navbar {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            z-index: 10;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 1.2em;
+        }
+
+        .main-title-section {
+            text-align: center;
+            margin-bottom: 130px;
+        }
+
+        .main-content .dot-separator {
+    color: transparent; }
+    .footer {
+    background-color: #000000; /* 배경은 그대로 검정색 */
+    color: #666666; /* 텍스트는 부드러운 회색 */
+    padding: 40px 20px;
+    text-align: center;
+    border-top: 1px solid #1a1a1a; /* 상단에 아주 얇은 구분선 추가 */
+    font-size: 0.85em;
+}
+.footer p {
+    margin-bottom: 5px;
+}
+
+.footer a {
+    color: #999999;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer a:hover {
+    color: #ffffff;
+}
+
+.footer-links {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.audio-container {
+            
+            text-align: center;
+            padding: 20px 0;
+            margin: 20px 0 40px 0; 
+            border-top: 1px solid #1a1a1a;
+            border-bottom: 1px solid #1a1a1a;
+        }
+
+        .audio-player {
+            width: 100%; 
+            max-width: 600px; 
+            margin: 0 auto; 
+            display: block; 
+        }
+    </style>
+</head>
+<body bgcolor="#000000">
+    <div class="full-screen-container">
+        <div class="navbar">
+            <a href="index.html">MOVIE</a>
+            <a href="history.html">HISTORY</a>
+            <a href="poster.html">POSTER</a>
+            <a href="favorite.html">MY FAVORITE</a>
+            <a href="sound.html">SOUND&SCENE</a>
+            <a href="evaluation.html">EVALUATION</a>
+        </div>
+        <div class="main-title-section">
+        <h1></h1> 
+        </div>
+
+    <div class="container">
+        <div class="title-area">
+            <div class="main-title-box"><h1>SOUND&SCENE</h1></div>
+        </div>
+
+        <center>
+            <h2>센과 치히로의 행방불명</h2>
+        </center>
+
+        <div class="section-container">
+            <img src="s1.jpg" alt="tpse" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+        <div class="audio-container">
+            <audio controls class="audio-player">
+                <source src="sound1.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+            <div class="text-block">
+                <p>
+                    센과 치히로의 수많은 명장면이 있지만 가장 좋았다고 할 수 있는 부분은 꽃이 가득한 수풀을 지나
+                    하쿠가 센에게 주먹밥을 건내는 장면이라고 생각합니다.<br>
+                    이 영화에서 감동적인 순간에 흘러나오는 ost "생명의 이름"은 관객의 마음을 울리는 노래라고 할 수 있습니다.
+                </p>
+            </div>
+        </div>
+
+        <center>
+            <h2>라라랜드</h2>
+        </center>
+
+        <div class="section-container">
+            <img src="s2.jpg" alt="tpse" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+        <div class="audio-container">
+            <audio controls class="audio-player">
+                <source src="sound2.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+            <div class="text-block">
+                <p>
+                    이 장면은 영화 속에서 두 주인공이 서로의 꿈과 사랑에 대한 감정을 춤과 노래로 표현하고 있습니다.
+                    두 사람이 탭댄스를 추며 처음으로 서로에게 끌리는 감정을 확인하는, 영화의 주요하고 아름다운 순간 중 하나입니다.
+                    두 사람의 역동적인 춤 동작과 화려한 색감, 그리고 LA 야경이 어우러져 영화의 낭만적인 분위기를 극대화합니다.
+                    또한 이 곡은 또 다른 태양의 날이 밝아온다"는 제목처럼, 어제 실패했더라도 다시 일어나 꿈을 향해 나아가겠다는
+                    긍정적 메시지를 역동적이고 경쾌한 음악과 춤으로 표현합니다.
+                </p>
+            </div>
+        </div>
+            
+        <footer class="footer">
+            <p>&copy; 2024 Project INDEX. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a> | 
+                <a href="#">Terms of Service</a> | 
+                <a href="#">Contact</a>
+            </div>
+            <p>Designed for me</p>
+        </footer>
+
+    </div>
+</body>
+</html>

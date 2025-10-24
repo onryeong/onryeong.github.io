@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>poster</title>
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #000000; 
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+       
+        .top-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .top-nav div {
+            height: 16px;
+            background-color: #ffffff; 
+            border-radius: 3px;
+        }
+        .logo { width: 80px; }
+        .menu { width: 120px; display: flex; justify-content: flex-end; }
+        .menu-item { width: 40px; margin-left: 10px; }
+
+        .main-title-section {
+            text-align: center;
+            margin-bottom: 130px;
+        }
+        .main-title-box {
+            background-color: #ffffff; 
+            height: 40px;
+            width: 50%;
+            min-width: 250px;
+            margin: 0 auto 10px auto;
+            border-radius: 4px;
+        }
+        
+        .grid-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        .block-header {
+            background-color: #ffffff;
+            width: 100px;
+            height: 20px;
+            margin-bottom: 15px;
+            border-radius: 3px;
+        }
+        
+        .content-block {
+            background-color: #000000;
+            color: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            min-height: 250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .content-block h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        .content-block p {
+            font-size: 0.95em;
+        }
+
+        .image-container {
+            position: relative;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            min-height: 250px;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain; 
+            display: block;
+        }
+
+        .content-wrapper {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: flex-start; 
+}
+
+.block-header {
+    width: 100px;
+    height: 20px;
+    margin-bottom: 15px;
+    border-radius: 3px;
+}
+        
+
+.content-block {
+    color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+        @media (max-width: 768px) {
+            
+            .grid-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .main-title-section {
+                margin-bottom: 30px;
+            }
+        }
+        .full-screen-container {
+           
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+            color: white; 
+            text-align: center;
+            padding-left: 0px;
+        }
+
+        .navbar {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            z-index: 10;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 1.2em;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+        }
+
+        .main-content {
+    
+    margin-top: 80px; 
+}
+
+.main-content .dot-separator {
+             
+    color: transparent; 
+}
+.footer {
+    background-color: #000000; /* 배경은 그대로 검정색 */
+    color: #666666; /* 텍스트는 부드러운 회색 */
+    padding: 40px 20px;
+    text-align: center;
+    border-top: 1px solid #1a1a1a; /* 상단에 아주 얇은 구분선 추가 */
+    font-size: 0.85em;
+}
+
+.footer p {
+    margin-bottom: 5px;
+}
+
+.footer a {
+    color: #999999;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer a:hover {
+    color: #ffffff;
+}
+
+.footer-links {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        
+        <div class="full-screen-container">
+        <div class="navbar">
+            <a href="index.html">MOVIE</a>
+            <a href="history.html">HISTORY</a>
+            <a href="poster.html">POSTER</a>
+            <a href="favorite.html">MY FAVORITE</a>
+            <a href="sound.html">SOUND&SCENE</a>
+            <a href="evaluation.html">EVALUATION</a>
+        </div>
+
+        <div class="main-content">
+    <p class="dot-separator">.</p> 
+    
+</div>
+
+        
+        <div class="main-title-section">
+        <h1>POSTER</h1> 
+        </div>
+
+       
+        <div class="grid-layout">
+            
+           
+            <div class="image-container">
+                <img src="poster1.jpg" alt="사진 1" onerror="this.outerHTML='<div style=\'background-color:#ccc; height:100%; display:flex; align-items:center; justify-content:center; color:#999;\'>이미지 로드 실패</div>'">
+            </div>
+            
+            <div class="content-wrapper">
+                <div class="content-block">
+                    <h3>8번 출구</h3>
+                    <p>
+                        포스터는 노란색 바탕에 단순한 검은색과 보라색 요소, 그리고 인물의 옆모습으로 구성되어 있습니다.
+                        이 극도로 단순화된 디자인은 원작 게임의 미니멀리즘과 반복되는 공간의 특징을 반영합니다.<br>
+                        포스터의 주조색인 노란색은 경고, 위험, 주의를 상징하는 동시에 지하도의 조명을 연상시키며,
+                        강렬한 시각적 효과를 통해 관객의 이목을 집중시킵니다.<br>
+                        숫자 8이 화면의 큰 비중을 차지하며, 그 안에 인물의 옆모습이 프레임처럼 걸쳐져 있습니다.
+                        '8'은 탈출을 위한 목표이자, 무한루프를 암시하는 형태로 보일 수 있어 영화의 핵심 주제인 반복과 탈출의 딜레마를 시각적으로 상징합니다.
+                    </p>
+                </div>
+            </div>
+            
+            
+            <div class="content-wrapper">
+                <div class="content-block">
+                    <h3>체인소맨:레제편</h3>
+                    <p>
+                        포스터 전체를 지배하는 **붉은색(Red)**과 등장인물들의 흰 셔츠, 그리고 체인소 맨의 검은 그림자 및 짙은 명암 대비가 매우 강렬합니다.
+                        붉은색은 피, 폭력, 정열, 위험 등 애니메이션의 잔혹하고 폭력적인 액션 및 격정적인 주제를 상징적으로 나타냅니다.<br>
+                        주인공이 화면 중앙 상단에서 아래로 뛰어내리는 듯한 역동적인 자세를 취하고 있으며, 그 주변으로 주요 인물들과 악마들이
+                        거대한 붉은 날개 형상 안에 배치되어 있습니다.
+                        이는 영화의 핵심 갈등과 다층적인 관계들을 한눈에 보여주는 집단 구도입니다.<br>
+                        애니메이션의 특징을 살린 선 굵고 명료한 만화적 일러스트 스타일로, 젊은 관객층에게 어필하며 장르적 매력을 극대화합니다.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="image-container">
+                <img src="poster2.jpg" alt="사진 2" onerror="this.outerHTML='<div style=\'background-color:#ccc; height:100%; display:flex; align-items:center; justify-content:center; color:#999;\'>이미지 로드 실패</div>'">
+            </div>
+            
+            
+            <div class="image-container">
+                <img src="poster3.jpg" alt="사진 3" onerror="this.outerHTML='<div style=\'background-color:#ccc; height:100%; display:flex; align-items:center; justify-content:center; color:#999;\'>이미지 로드 실패</div>'">
+            </div>
+            
+            <div class="content-wrapper">
+                <div class="content-block">
+                    <h3>어쩔수가없다</h3>
+                    <p>
+                        포스터 전체가 세밀한 펜화 또는 목판화 느낌의 일러스트로 이루어져 있으며, 마치 한 폭의 동화책 삽화나 고전적인 태피스트리를 보는 듯한 인상을 줍니다.<br>
+                        인물, 집, 자연 풍경 등이 층층이 쌓아 올려진 콜라주 같은 구도를 이루고 있습니다. 이는 단순한 배경이 아니라,
+                        한 가족과 그 주변 인물들의 복잡하고 다층적인 삶의 서사와 심리적 풍경을 상징합니다.
+                        각 인물은 독립적인 상황 속에 있지만, 전체적으로는 하나의 유기적인 '집' 또는 '마을' 형태로 엮여 있습니다.<br>
+                        밝고 몽환적인 색감과 동화적인 스타일 뒤에는, 삽화 속에 숨겨진 인물들의 미묘한 표정이나 부자연스러운 배치 등을 통해 영화가 다룰 수 있는
+                        현실의 비극, 불안, 아이러니 등의 블랙 코미디적 요소가 은근히 암시됩니다.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+<footer class="footer">
+            <p>&copy; 2024 Project INDEX. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a> | 
+                <a href="#">Terms of Service</a> | 
+                <a href="#">Contact</a>
+            </div>
+            <p>Designed for me</p>
+        </footer>
+
+    </div>
+</body>
+</html>
